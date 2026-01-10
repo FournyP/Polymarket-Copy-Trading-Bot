@@ -201,7 +201,7 @@ cargo build --release
 This bot is provided as-is. Trading involves financial risk. Use at your own discretion. Test thoroughly before using real funds. The authors are not responsible for any losses.
 
 ## 📄 Contact
-t.me/terauss
+For questions or issues, contact via Telegram: [@terauss](https://t.me/terauss)
 
 
 
