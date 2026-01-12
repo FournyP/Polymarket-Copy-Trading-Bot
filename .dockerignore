@@ -1,0 +1,42 @@
+# Git files
+.git/
+.gitignore
+.gitattributes
+
+# Documentation
+*.md
+docs/
+
+# Build artifacts
+target/
+*.exe
+*.pdb
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Scripts (unless needed in container)
+scripts/
+*.bat
+run.sh
+run.bat
+
+# Environment files (these should be provided via env vars)
+.env
+.env.*
+
+# Test files
+tests/
+benches/
+
+# CI/CD
+.github/
+.gitlab-ci.yml
