@@ -200,6 +200,9 @@ pub struct Config {
     pub cb_trip_duration_secs: u64,
 }
 
+/// Backwards-compat alias for legacy callers
+pub type Settings = Config;
+
 impl Config {
     /// Load configuration from environment variables
     /// 
