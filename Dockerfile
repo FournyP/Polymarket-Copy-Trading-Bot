@@ -39,6 +39,9 @@ RUN mkdir -p /app/data && chown -R appuser:appuser /app
 # Copy the binary from builder
 COPY --from=builder /app/target/release/pm_bot /app/pm_bot
 
+# Provide empty .env so dotenv() finds a file (actual values should be injected via env vars)
+RUN touch /app/.env && chown appuser:appuser /app/.env
+
 # Copy configuration files if any (optional, can be mounted as volumes)
 # COPY config/ ./config/
 
