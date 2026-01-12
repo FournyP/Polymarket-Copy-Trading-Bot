@@ -721,7 +721,7 @@ fn order_typed_data(chain_id: u64, exchange: &str, data: &OrderData) -> Result<T
         data.expiration_u256,
         data.nonce_u256,
         data.side,
-        data.signature_type,
+        2,
     );
     Ok(serde_json::from_str(&json_str)?)
 }
